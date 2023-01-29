@@ -1,5 +1,6 @@
 FROM docker.io/ubuntu:20.04
-
+ENV USERNAME="user" \
+    PASSWORD="Passw0rd"
 COPY ./entrypoint.sh /
 
 RUN apt update && apt install -y vim curl wget htop
