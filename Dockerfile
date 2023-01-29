@@ -11,7 +11,7 @@ RUN wget -O /usr/jdk.tar.gz https://github.com/alibaba/dragonwell17/releases/dow
     cd /usr/ && tar zxvf jdk.tar.gz
     
 RUN wget -O gost.gz https://github.com/go-gost/gost/releases/download/v3.0.0-rc.3/gost-linux-amd64-3.0.0-rc.3.gz && \
-    gunzip gost.gz && mv gost /usr/bin && chmod +x /ur/bin/gost
+    gunzip gost.gz && mv gost /usr/bin && chmod +x /usr/bin/gost
 
 ENTRYPOINT ["/sbin/tini", "--"]
 CMD ["/entrypoint.sh"]
